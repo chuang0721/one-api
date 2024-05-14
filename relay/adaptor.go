@@ -15,6 +15,7 @@ import (
 	"github.com/songquanpeng/one-api/relay/adaptor/ollama"
 	"github.com/songquanpeng/one-api/relay/adaptor/openai"
 	"github.com/songquanpeng/one-api/relay/adaptor/palm"
+	"github.com/songquanpeng/one-api/relay/adaptor/sensetime"
 	"github.com/songquanpeng/one-api/relay/adaptor/tencent"
 	"github.com/songquanpeng/one-api/relay/adaptor/xunfei"
 	"github.com/songquanpeng/one-api/relay/adaptor/zhipu"
@@ -55,6 +56,8 @@ func GetAdaptor(apiType int) adaptor.Adaptor {
 		return &cloudflare.Adaptor{}
 	case apitype.DeepL:
 		return &deepl.Adaptor{}
+	case apitype.Sensetime:
+		return &sensetime.Adaptor{}
 	}
 	return nil
 }

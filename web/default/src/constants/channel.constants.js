@@ -1,4 +1,5 @@
 export const CHANNEL_OPTIONS = [
+    {key: 40, text: '商汤日日新', value: 40, color: 'black'},
     {key: 1, text: 'OpenAI', value: 1, color: 'green'},
     {key: 14, text: 'Anthropic Claude', value: 14, color: 'black'},
     {key: 33, text: 'AWS Claude', value: 33, color: 'black'},

@@ -1,4 +1,10 @@
 export const CHANNEL_OPTIONS = {
+  40: {
+    key: 40,
+    text: '商汤日日新',
+    value: 40,
+    color: 'success'
+  },
   1: {
     key: 1,
     text: 'OpenAI',

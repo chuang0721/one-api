@@ -172,6 +172,15 @@ const typeConfig = {
   31: {
     modelGroup: "lingyiwanwu",
   },
+  32: {
+    input: {
+      models: ["SenseChat-5", "SenseChat", "SenseChat-32K", "SenseChat-128K", "SenseChat-Turbo", "SenseChat-Code", "nova-embedding-stable"],
+    },
+    prompt: {
+      key: "按照如下格式输入：AccessKey|SecretKey",
+    },
+    modelGroup: "sensetime",
+  },
 };
 
 export { defaultConfig, typeConfig };
